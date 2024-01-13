@@ -8,7 +8,7 @@
 constexpr auto plugin_version = stringify(VERSION_MAJOR) "." stringify(VERSION_MINOR) "." stringify(VERSION_PATCH) "." stringify(VERSION_BUILD);
 
 
-class goalspeed-117: public BakkesMod::Plugin::BakkesModPlugin/*, public BakkesMod::Plugin::PluginSettingsWindow*//*, public BakkesMod::Plugin::PluginWindow*/
+class goalspeed117: public BakkesMod::Plugin::BakkesModPlugin, public BakkesMod::Plugin::PluginSettingsWindow/*, public BakkesMod::Plugin::PluginWindow*/
 {
 
 	//std::shared_ptr<bool> enabled;
@@ -16,6 +16,7 @@ class goalspeed-117: public BakkesMod::Plugin::BakkesModPlugin/*, public BakkesM
 	//Boilerplate
 	virtual void onLoad();
 	virtual void onUnload();
+	void ballOnTop();
 
 	// Inherited via PluginSettingsWindow
 	/*
@@ -29,7 +30,7 @@ class goalspeed-117: public BakkesMod::Plugin::BakkesModPlugin/*, public BakkesM
 
 	bool isWindowOpen_ = false;
 	bool isMinimized_ = false;
-	std::string menuTitle_ = "goalspeed-117";
+	std::string menuTitle_ = "goalspeed117";
 
 	virtual void Render() override;
 	virtual std::string GetMenuName() override;

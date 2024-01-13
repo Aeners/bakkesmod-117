@@ -1,26 +1,26 @@
 #include "pch.h"
-#include "goalspeed-117.h"
+#include "goalspeed117.h"
 
 /* Plugin Settings Window code here
-std::string goalspeed-117::GetPluginName() {
-	return "goalspeed-117";
+std::string goalspeed117::GetPluginName() {
+	return "goalspeed117";
 }
 
-void goalspeed-117::SetImGuiContext(uintptr_t ctx) {
+void goalspeed117::SetImGuiContext(uintptr_t ctx) {
 	ImGui::SetCurrentContext(reinterpret_cast<ImGuiContext*>(ctx));
 }
 
 // Render the plugin settings here
 // This will show up in bakkesmod when the plugin is loaded at
-//  f2 -> plugins -> goalspeed-117
-void goalspeed-117::RenderSettings() {
-	ImGui::TextUnformatted("goalspeed-117 plugin settings");
+//  f2 -> plugins -> goalspeed117
+void goalspeed117::RenderSettings() {
+	ImGui::TextUnformatted("goalspeed117 plugin settings");
 }
 */
 
 /*
 // Do ImGui rendering here
-void goalspeed-117::Render()
+void goalspeed117::Render()
 {
 	if (!ImGui::Begin(menuTitle_.c_str(), &isWindowOpen_, ImGuiWindowFlags_None))
 	{
@@ -38,43 +38,43 @@ void goalspeed-117::Render()
 }
 
 // Name of the menu that is used to toggle the window.
-std::string goalspeed-117::GetMenuName()
+std::string goalspeed117::GetMenuName()
 {
-	return "goalspeed-117";
+	return "goalspeed117";
 }
 
 // Title to give the menu
-std::string goalspeed-117::GetMenuTitle()
+std::string goalspeed117::GetMenuTitle()
 {
 	return menuTitle_;
 }
 
 // Don't call this yourself, BM will call this function with a pointer to the current ImGui context
-void goalspeed-117::SetImGuiContext(uintptr_t ctx)
+void goalspeed117::SetImGuiContext(uintptr_t ctx)
 {
 	ImGui::SetCurrentContext(reinterpret_cast<ImGuiContext*>(ctx));
 }
 
 // Should events such as mouse clicks/key inputs be blocked so they won't reach the game
-bool goalspeed-117::ShouldBlockInput()
+bool goalspeed117::ShouldBlockInput()
 {
 	return ImGui::GetIO().WantCaptureMouse || ImGui::GetIO().WantCaptureKeyboard;
 }
 
 // Return true if window should be interactive
-bool goalspeed-117::IsActiveOverlay()
+bool goalspeed117::IsActiveOverlay()
 {
 	return true;
 }
 
 // Called when window is opened
-void goalspeed-117::OnOpen()
+void goalspeed117::OnOpen()
 {
 	isWindowOpen_ = true;
 }
 
 // Called when window is closed
-void goalspeed-117::OnClose()
+void goalspeed117::OnClose()
 {
 	isWindowOpen_ = false;
 }
